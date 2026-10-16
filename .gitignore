@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Variable files
+terraform.tfvars
+
+# Terraform plans
+tfplan
+
+# SSH Keys
+*.pem
+*.key
+id_rsa
+id_rsa.pub
