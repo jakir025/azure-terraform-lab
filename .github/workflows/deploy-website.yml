@@ -28,5 +28,9 @@ jobs:
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_PRIVATE_KEY }}
           script: |
+            sudo apt update
+            sudo apt install nginx -y
+            sudo mkdir -p /var/www/html
             sudo cp -r /tmp/site/* /var/www/html/
-            sudo systemctl restart nginx
+            sudo systemctl enable nginx
+            sudo systemctl restart nginx || sudo systemctl start nginx
