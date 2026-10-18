@@ -22,12 +22,12 @@ provider "azurerm" {
 
 variable "location" {
   type    = string
-  default = "centralus"
+  default = "centralindia"
 }
 
 variable "vm_size" {
   type    = string
-  default = "Standard_D2s_v5"
+  default = "Standard_D2as_v5"
 }
 
 variable "vm_zone" {
@@ -45,7 +45,7 @@ variable "vm_admin_password" {
 ############################
 
 resource "azurerm_resource_group" "JAF" {
-  name     = "lab-jkl-2"
+  name     = "lab-jkl-3"
   location = var.location
 }
 
