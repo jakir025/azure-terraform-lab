@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "lab-jkl-2"
-    storage_account_name = "jakirtfstate2026"
+    resource_group_name  = "tfstate-rg"
+    storage_account_name = "jakirtfstate2026101801"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
