@@ -167,3 +167,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 output "resource_group_name" {
   value = azurerm_resource_group.JAF.name
 }
+
+output "vm_name" {
+  value = azurerm_linux_virtual_machine.vm.name
+}
