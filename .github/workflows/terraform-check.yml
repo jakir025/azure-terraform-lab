@@ -36,4 +36,4 @@ jobs:
 
       - run: terraform plan -input=false
 
-      - run: terraform apply -auto-approve
+   
